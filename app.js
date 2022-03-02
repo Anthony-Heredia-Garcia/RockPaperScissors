@@ -21,7 +21,7 @@ function chooseRock() {
   if (compValue === 1) {
     gameDisplay.innerHTML = "Computer Chose Rock. You tied!";
   } else if (compValue === 2) {
-    gameDisplay.innerHTML = "Computer Chose Sissors. You win!";
+    gameDisplay.innerHTML = "Computer Chose Scissors. You win!";
   } else if (compValue === 3) {
     gameDisplay.innerHTML   = "Computer Chose Paper. You lose!";
   }
@@ -32,7 +32,7 @@ function choosePaper() {
   if (compValue === 1) {
     gameDisplay.innerHTML = "Computer Chose Rock. You win!";
   } else if (compValue === 2) {
-    gameDisplay.innerHTML = "Computer Chose Sissors. You lose!";
+    gameDisplay.innerHTML = "Computer Chose Scissors. You lose!";
   } else if (compValue === 3) {
     gameDisplay.innerHTML   = "Computer Chose Paper. You tied!";
   }
@@ -43,7 +43,7 @@ function chooseScissors() {
   if (compValue === 1) {
     gameDisplay.innerHTML = "Computer Chose Rock. You lose!";
   } else if (compValue === 2) {
-    gameDisplay.innerHTML = "Computer Chose Sissors. You tied!";
+    gameDisplay.innerHTML = "Computer Chose Scissors. You tied!";
   } else if (compValue === 3) {
     gameDisplay.innerHTML   = "Computer Chose Paper. You win!";
   }
