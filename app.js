@@ -1,6 +1,7 @@
 const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
+let gameDisplay = document.getElementById("gameDisplay");
 
 function compChoice(min, max) {
   min = Math.ceil(min);
@@ -18,33 +19,33 @@ function compChoice(min, max) {
 function chooseRock() {
   compValue = compChoice(1, 3);
   if (compValue === 1) {
-    alert("Computer Chose Rock. You tied!");
+    gameDisplay.innerHTML = "Computer Chose Rock. You tied!";
   } else if (compValue === 2) {
-    alert("Computer Chose Sissors. You win!");
+    gameDisplay.innerHTML = "Computer Chose Sissors. You win!";
   } else if (compValue === 3) {
-    alert("Computer Chose Paper. You lose!");
+    gameDisplay.innerHTML   = "Computer Chose Paper. You lose!";
   }
 }
 
 function choosePaper() {
   compValue = compChoice(1, 3);
   if (compValue === 1) {
-    alert("Computer Chose Rock. You win!");
+    gameDisplay.innerHTML = "Computer Chose Rock. You win!";
   } else if (compValue === 2) {
-    alert("Computer Chose Sissors. You lose!");
+    gameDisplay.innerHTML = "Computer Chose Sissors. You lose!";
   } else if (compValue === 3) {
-    alert("Computer Chose Paper. You tied!");
+    gameDisplay.innerHTML   = "Computer Chose Paper. You tied!";
   }
 }
 
 function chooseScissors() {
   compValue = compChoice(1, 3);
   if (compValue === 1) {
-    alert("Computer Chose Rock. You lose!");
+    gameDisplay.innerHTML = "Computer Chose Rock. You lose!";
   } else if (compValue === 2) {
-    alert("Computer Chose Sissors. You tied!");
+    gameDisplay.innerHTML = "Computer Chose Sissors. You tied!";
   } else if (compValue === 3) {
-    alert("Computer Chose Paper. You win!");
+    gameDisplay.innerHTML   = "Computer Chose Paper. You win!";
   }
 }
 
